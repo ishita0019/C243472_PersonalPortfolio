@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #efecec;
+    color: #060505;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: hwb(0 95% 4% / 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #080808;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 18px;
+    color: #060606;
+    margin-left: 35px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: rgb(9, 9, 9);
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 100px 10% 80px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.heading span {
+    color: rgb(141, 59, 126);
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content h3 span {
+    color: rgb(117, 46, 100);
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 30px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(180, 70, 182);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(133, 56, 152);
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    background: rgb(83, 38, 80);
+    color: #080808;
+    box-shadow: 0 0 15px #0ef;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(117, 106, 120);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(132, 51, 128);
+    font-size: 16px;
+    color: #080808;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill-box {
+    background: #7e8cc5;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.skill-box i {
+    font-size: 50px;
+    color: rgb(188, 63, 213);
+    margin-bottom: 15px;
+}
+
+.skill-box:hover {
+    border-color: rgb(135, 58, 160);
+    transform: scale(1.03);
+}
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.project-box {
+    background: #daafaf;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    border-color: rgb(160, 75, 173);
+}
+
+.project-layer h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-layer p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #efeded;
+    border-radius: 50%;
+    color: #ece2e2;
+    text-decoration: none;
+}
+
+
+.contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form input, 
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #ededed;
+    background: #060606;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin: 10px 0;
+    resize: none;
+    transition: 0.3s;
+}
+
+.contact form input:focus, 
+.contact form textarea:focus {
+    border-color: rgb(184, 83, 212);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #191919;
+    font-size: 14px;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(5, 5, 5);
+    box-shadow: 0 0 25px rgb(173, 70, 189);
+}
